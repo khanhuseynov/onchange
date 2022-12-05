@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="general">
+        
+        <div class="container main">
+
+            <div class="center_main mt-2">
+                <h1 class="lead display-5 text-white">Buy a Book <br> (George Orwell)</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-white ">Email address</label>
+                        <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label text-white">Password</label>
+                        <input type="password" class="form-control " id="exampleInputPassword1">
+                    </div>
+                    <label for="exampleInputPassword1" class="form-label text-white">Choose the book</label>
+                    <select onchange="select_book()" class="form-select " id="books"
+                        aria-label="Default select example">
+                        <option selected>choose a George Orwell book</option>
+                        <option value="1984">1984</option>
+                        <option value="whyiwrite">Why i Write</option>
+                        <option value="burmesedays">Burmese Days</option>
+                    </select>
+                    <div class="book">
+                        <img class="mt-4 img_book" id="img" width="100%" alt="" src="img/George_Orwell_press_photo.jpg">
+                    </div>
+                    <br>
+                    <button id="btn" type="submit" class="btn btn-primary  w-100">Next</button>
+                </form>
+
+            </div>
+        </div>
+       
+    </div>
+
+</html>
